@@ -54,14 +54,34 @@
       font-size: 20px;
       font-weight: bolder;
       }
+    #footer {
+        margin-top: 30px;
+        margin-left: 25px;
+        font-family: Roboto, 'Open Sans', sans-serif;
+        font-size: 12px;
+        color: #bbb;
+    }
+    #footer a {
+        text-decoration: none;
+        color: #bbb;
+        margin: 0px 5px 0px 5px;
+    }
+    #footer a:hover {
+        text-decoration: underline;
+    }
     </style>
 </head>
 <body>
   <h1>Text Analyzer</h1>
-  <textarea id="text"></textarea>
+  <textarea id="text" placeholder="Paste your text here and click on 'RUN ANALYSIS'"></textarea>
   <br/>
       <input type="submit" id="run" value="RUN ANALYSIS"/>
   <div id="results"></div>
+
+<a href="https://github.com/MarianoGappa/text-analyzer"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+
+<div id="footer"><a href="https://twitter.com/MarianoGappa">@MarianoGappa</a> - <a href="https://github.com/MarianoGappa/text-analyzer">Source Code</a> - <a href="https://github.com/MarianoGappa/text-analyzer/issues">Bug Report</a></div>
+
 <!-- Include JavaScript dependencies -->
 <script type="text/javascript" src="./target/scala-2.11/text-analyzer-scala-js-jsdeps.js"></script>
 <!-- Include Scala.js compiled code -->
